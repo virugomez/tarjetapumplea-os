@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f9fc;
+        }
+
+        .tarjeta {
+            color: rgb(24, 190, 168);
+            position: relative;
+            /* Cambiado a relative para que se centre con el body y contenga los elementos absolutos */
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            background-color: rgb(226, 133, 26);
+        }
+
+        .pumpeaños {
+            color: rgb(0, 0, 0);
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            top: 10px;
+            justify-content: center;
+            left: 40px;
+        }
+
+        .nene {
+            color: rgb(190, 57, 24);
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            top: 40px;
+            left: 30px;
+            bottom: 10px;
+        }
+
+        .dia {
+            color: rgb(190, 24, 154);
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            top: 70px;
+            left: 10px;
+            bottom: 10px;
+        }
+
+        .fecha {
+            color: rgb(24, 35, 190);
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            top: 90px;
+            left: 10px;
+            bottom: 10px;
+        }
+
+        .papachi {
+            color: rgb(137, 24, 190);
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            top: 110px;
+            left: 10px;
+            bottom: 10px;
+        }
+
+        .gift {
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            top: 140px;
+            left: 260px;
+            bottom: 100px;
+        }
+
+        .gitf {
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            top: 100px;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .it {
+            position: absolute;
+            width: 500px;
+            height: 400px;
+            top: 129px;
+            left: 10px;
+            bottom: 100px;
+        }
+
+        .bottom {
+            position: absolute;
+            /* Añadido para que se quede fijo abajo a la derecha de la tarjeta */
+            bottom: 10px;
+            right: 45px;
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: rgb(226, 168, 43);
+            color: rgb(255, 0, 34);
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: bold;
+            z-index: 10;
+            /* Para asegurar que quede por encima de otros elementos */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tarjeta">
+        <div class="pumpeaños">
+            VENTE A MI PUMPEAÑOS
+        </div>
+        <DIV class="nene">
+            No te lo pierdaaas chiki beybe
+        </DIV>
+        <di class="dia">
+            Día: miercoles
+        </di>
+        <div class="fecha">
+            Fecha: 31 de Febrero
+        </div>
+        <div class="papachi">
+            sino vienes tus días no serán cheveres, papacho.
+        </div>
+        <div class="gift">
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUycXNjaDExd2d2NGxyNjAweTd6aHIzczhqcHN4ZGdjZTZpemttNmw1dSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/IcifS1qG3YFlS/source.gif"
+                width="40px" height="60px">
+        </div>
+        <div>
+            <img src="https://media.tenor.com/GsYoF1hfR_AAAAAM/dancing-dance.gif" width="40px" height="60px">
+        </div>
+        <div class="it">
+            <img src="https://i.pinimg.com/originals/83/ff/aa/83ffaa1973e7b177b24af4ec383735bd.gif" width="60px"
+                height="70px">
+        </div>
+
+        <a class="bottom"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeScaYf0aLiz9h5ea4Un0VN2jVNKbaOlwXc2J7NEDqnEKMNoQ/viewform?usp=dialog"
+            target="_blank">
+            LINK AQUÍ
+        </a>
+
+    </div>
+
+    <audio id="musicaFondo" loop>
+        <source src="https://youtu.be/Z6dqIYKIBSU?si=IEFrw-ForafkZG0p" type="audio/mpeg">
+    </audio>
+
+    <script>
+        document.addEventListener('click', function () {
+            var audio = document.getElementById('musicaFondo');
+            audio.play().catch(function (error) {
+                console.log("Interacción requerida para el audio.");
+            });
+        }, { once: true });
+    </script>
+</body>
+
+</html>
